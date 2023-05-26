@@ -30,7 +30,7 @@ module locker::locker {
         is_claim: bool
     }
 
-    struct LockItem has store, key {
+    struct LockItem has key, store {
         id: UID,
         lock_id: ID
     }
